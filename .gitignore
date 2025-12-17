@@ -1,22 +1,50 @@
-# Virtual environment
-.venv/
-
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Distribution / packaging
+*.so
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
+*.egg
 
-# Installer logs
-pip-log.txt
+# Virtual Environment
+venv/
+ENV/
+env/
 
-# Unit test / coverage
+# Testing
 .pytest_cache/
 .coverage
+htmlcov/
+.tox/
 
-# Editor directories
+# IDE
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

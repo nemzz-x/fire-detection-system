@@ -1,4 +1,5 @@
 # Fire Detection Dashboard
+![f](images/plate1.jpeg)
 
 Real-time fire detection monitoring system with temperature and gas level tracking.
 

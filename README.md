@@ -22,12 +22,13 @@ A simple, real-time fire detection monitoring system with temperature and gas le
 
 ```
 fire-detection-system/
-├── backend/
-│   ├── __init__.py
-│   └── main.py          # Complete API application
-├── frontend/
-│   └── templates/
-│       └── dashboard.html   # Web dashboard
+├── app/
+│   ├── backend/
+│   │   ├── __init__.py
+│   │   └── main.py      # Complete API application
+│   └── frontend/
+│       └── templates/
+│           └── dashboard.html   # Web dashboard
 ├── docker/
 │   ├── Dockerfile       # Container configuration
 │   └── docker-compose.yml   # Docker compose setup
@@ -58,13 +59,13 @@ fire-detection-system/
 
 3. **Run the application**
    ```bash
-   cd backend
+   cd app/backend
    python main.py
    ```
    
    Or with uvicorn:
    ```bash
-   uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+   uvicorn app.backend.main:app --host 0.0.0.0 --port 8000 --reload
    ```
 
 4. **Access the dashboard**

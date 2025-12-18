@@ -6,12 +6,13 @@ Clean and organized fire detection monitoring system.
 
 ```
 fire-detection-system/
-├── backend/              # Backend application
-│   ├── __init__.py      
-│   └── main.py          # FastAPI application
-├── frontend/             # Frontend templates
-│   └── templates/
-│       └── dashboard.html
+├── app/                  # Main application
+│   ├── backend/          # Backend code
+│   │   ├── __init__.py      
+│   │   └── main.py       # FastAPI application
+│   └── frontend/         # Frontend templates
+│       └── templates/
+│           └── dashboard.html
 ├── docker/               # Docker configuration
 │   ├── Dockerfile
 │   └── docker-compose.yml
@@ -31,7 +32,7 @@ chmod +x run.sh
 ### Method 2: Manual
 ```bash
 pip install -r requirements.txt
-cd backend
+cd app/backend
 python main.py
 ```
 

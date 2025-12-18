@@ -128,7 +128,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-templates = Jinja2Templates(directory="frontend/templates")
+templates = Jinja2Templates(directory="app/frontend/templates")
 
 # ==================== Routes ====================
 @app.get("/health", response_model=HealthResponse)

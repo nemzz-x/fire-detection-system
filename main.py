@@ -162,11 +162,13 @@ async def dashboard(
         
         # Get recent logs (newest first for display)
         recent_logs = store.get_recent_logs(limit=20)
+        # Convert SensorData objects to dicts for JSON serialization
+        logs_dict = [log.model_dump() for log in recent_logs]
         
         return templates.TemplateResponse("dashboard.html", {
             "request": request,
             "current": current_dict,
-            "logs": recent_logs,
+            "logs": logs_dict,
             "danger_count": stats["danger_count"],
             "normal_count": stats["normal_count"]
         })
